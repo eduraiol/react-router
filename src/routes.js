@@ -1,12 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./componentes/Menu";
-import Inicio from "./paginas/Inicio";
-import SobreMim from "./paginas/SobreMim";
+import Inicio from './paginas/Inicio';
+import SobreMim from './paginas/SobreMim';
 
 function AppRoutes() {
   return (
     <BrowserRouter>
-
       <Menu />
 
       <Routes>

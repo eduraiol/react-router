@@ -1,9 +1,11 @@
-import React from 'react'
+import Banner from "componentes/Banner";
 
-function Inicio() {
-  return (
-    <h1>Olá mundo!</h1>
-  )
+export default function Inicio() {
+    return (
+        <main>
+            <Banner />
+
+            <h1>Olá mundo!</h1>
+        </main>
+    )
 }
-
-export default Inicio
