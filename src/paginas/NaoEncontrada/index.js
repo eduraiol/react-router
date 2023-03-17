@@ -1,19 +1,15 @@
-import React from 'react'
-import styles from './NaoEncontrada.module.css'
+import styles from './NaoEncontrada.module.css';
 import erro404 from 'assets/erro_404.png'
-import BotaoPrincipal from 'componentes/BotaoPrincipal'
-import { useNavigate } from 'react-router-dom'
+import BotaoPrincipal from 'componentes/BotaoPrincipal';
+import { useNavigate } from 'react-router-dom';
 
-function NaoEncontrado() {
-
+export default function NaoEncontrada() {
     const navegar = useNavigate();
 
     return (
         <>
             <div className={styles.conteudoContainer}>
-                <span className={styles.texto404}>
-                    404
-                </span>
+                <span className={styles.texto404}>404</span>
 
                 <h1 className={styles.titulo}>
                     Ops! Página não encontrada.
@@ -24,10 +20,10 @@ function NaoEncontrado() {
                 </p>
 
                 <p className={styles.paragrafo}>
-                    Aguarde uns instante e recarregue a página, ou volte para a página inicial!
+                    Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
 
-                <div 
+                <div
                     className={styles.botaoContainer}
                     onClick={() => navegar(-1)}
                 >
@@ -39,14 +35,11 @@ function NaoEncontrado() {
                 <img
                     className={styles.imagemCachorro}
                     src={erro404}
-                    alt="Cachorro de óculos, vestido como humano!"
+                    alt="Cachorro de óculos e vestido como humano"
                 />
             </div>
-            <div className={styles.espacoEmBranco}>
-
-            </div>
+            <div className={styles.espacoEmBranco}></div>
         </>
+
     )
 }
-
-export default NaoEncontrado
